@@ -37,7 +37,7 @@ class MealCard extends StatelessWidget {
         .map(
           (item) => Column(
             children: [
-              Container(
+              SizedBox(
                 width: double.infinity,
                 child: Text(
                   "\u2022   $item",

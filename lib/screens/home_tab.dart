@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '/models/meal.dart';
 import '../widgets/meal_details_card.dart';
 import '/dummy_data.dart';
 
@@ -24,7 +23,7 @@ class _HomeTabState extends State<HomeTab> {
         meal: DUMMY_MEALS[idx],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.refresh_sharp),
+        child: const Icon(Icons.refresh_sharp),
         onPressed: () {
           setState(() {
             idx = Random().nextInt(DUMMY_MEALS.length);

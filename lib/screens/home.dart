@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
   final Function changeIdx;
   final List<String> favourites;
 
-  Home({
+  const Home({
     super.key,
     required this.currentIdx,
     required this.changeIdx,
@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
 
   List<Widget> get pages {
     return [
-      HomeTab(),
+      const HomeTab(),
       const Categories(),
       Favourites(
         favourites: favourites,

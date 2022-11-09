@@ -9,7 +9,8 @@ class MealDetails extends StatelessWidget {
   final Function toggleFavourite;
   final List<String> favouriteList;
 
-  MealDetails({super.key, required this.toggleFavourite,required this.favouriteList});
+  const MealDetails(
+      {super.key, required this.toggleFavourite, required this.favouriteList});
 
   @override
   Widget build(BuildContext context) {

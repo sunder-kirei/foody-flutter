@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../widgets/category_page_item.dart';
 
-import '../dummy_data.dart';
 import '../models/meal.dart';
 import '../models/category.dart';
 
