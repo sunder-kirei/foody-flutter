@@ -22,11 +22,15 @@ class Favourites extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView.builder(
-        itemBuilder: ((context, index) =>
-            MealItem(meal: availableMeals[index])),
-        itemCount: availableMeals.length,
-      ),
+      body: availableMeals.isEmpty
+          ? const Center(
+              child: Text("The list is empty, try add some!"),
+            )
+          : ListView.builder(
+              itemBuilder: ((context, index) =>
+                  MealItem(meal: availableMeals[index])),
+              itemCount: availableMeals.length,
+            ),
     );
   }
 }
